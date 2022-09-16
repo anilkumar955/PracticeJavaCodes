@@ -1,24 +1,22 @@
 package InterViewQuestion;
 
+import java.util.Arrays;
+
 public class MaxValueArray {
 
 	public static void main(String[] args) {
-		int[] no= {2,5,1,8,1,9,987};
-		int max=0;
-		int min=no[0];
-		for(int i=0;i<no.length;i++) {
-			
-			for(int j=i+1;j<no.length;j++) {
-				if(min<no[j]) {
-					min=no[j];
-				}else {
-					max=min;
-				}
-				
+		
+		int[] a= {5,3,24,1,9};
+		int max=a[1];
+		for(int i=0;i<a.length;i++) {
+			if(a[i]>max) {
+				max=a[i];
 			}
-			
 		}
+		
 		System.out.println(max);
+		
+		
+		
 	}
-
 }

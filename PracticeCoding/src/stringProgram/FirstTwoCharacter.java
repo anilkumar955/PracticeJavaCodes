@@ -3,7 +3,7 @@ package stringProgram;
 public class FirstTwoCharacter {
 
 	public static void main(String[] args) {
-		String s="An Nil Ill Lol";
+		String s="Ansx Nil Ill Lol";
 		String w="";s+=" ";
 		for(int i=0;i<s.length();i++) {
 			

@@ -3,7 +3,7 @@ package stringProgram;
 public class VouelweCheck {
 
 	public static void main(String[] args) {
-		String s = "welcome";
+		String s = "Awelcome";
 		String l=s.toLowerCase();
 		for(int i=0;i<l.length();i++) {
 			int count =0;

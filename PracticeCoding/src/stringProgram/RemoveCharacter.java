@@ -4,7 +4,7 @@ public class RemoveCharacter {
 
 	public static void main(String[] args) {
 
-		 String MyString = "ello"; 
+		 String MyString = "Hello"; 
 		for(int i=0;i<MyString.length();i++) {
 			if(Character.isLowerCase(MyString.charAt(i))) {
 				System.out.println(true);

@@ -16,6 +16,7 @@ public class PrintCharacterOneOne {
 		String word2=" ";
 		String word3=" ";
 		int firstComma =text.indexOf(",");
+	
 		if(firstComma>0) {
 			word1 =text.substring(0,firstComma);
 			

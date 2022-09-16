@@ -2,51 +2,25 @@ package stringProgram;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
 public class FirstNonRepetingChar {
 
 	public static void main(String[] args) {
-		String s ="bbanniial";
+		
+		String s="bac dab";
+		StringBuffer sb=new StringBuffer();
 		for(int i=0;i<s.length();i++) {
-			boolean repeate=false;
+			boolean rep=false;
 			for(int j=0;j<s.length();j++) {
 				if(i!=j && s.charAt(i)==s.charAt(j)) {
-					repeate=true;
+					rep=true;
 					break;
 				}
-			}
-			if(!repeate) {
-				System.out.println(s.charAt(i));
-				break;
+			}if(!rep) {
+				sb=sb.append(s.charAt(i));
 			}
 		}
+		System.out.println(sb);
 	}
-}				
-			
 	
-		
-		
-		// second approach
-		
-//	Map<Character , Integer> map = new HashMap();
-//	
-//	for(int i=0;i<s.length();i++) {
-//		char c = s.charAt(i);
-//		
-//		if(map.containsKey(c)) {
-//			map.put(c, map.get(c)+1);
-//		}
-//		else {
-//			map.put(c, 1);
-//			
-//		}
-//	}
-//	System.out.println(map);
-//	for(Entry<Character, Integer> entryset:map.entrySet()) {
-//		if(entryset.getValue()==1) {
-//			System.out.println(entryset.getKey());
-//		}
-//	}
-//	}
-			
+}

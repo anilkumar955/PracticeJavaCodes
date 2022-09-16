@@ -1,27 +1,26 @@
 import java.util.Arrays;
+import java.util.TreeSet;
 
 public class stringSorting {
 
 	public static void main(String[] args) {
-		String s= "9871";
-		char temp;
-		char[] c = s.toCharArray();
-		for(int i=0;i<s.length();i++) {
-			for(int j=i+1;j<s.length();j++) {
-				if(c[i]>c[j]) {
-					temp=c[i];
-					c[i]=c[j];
-					c[j]=temp;
+		String[] s= {"dz","dk" , "da","da"};
+		for(int i=0;i<s.length;i++) {
+			int min=i;
+			for(int j=i+1;j<s.length;j++) {
+				if(s[j].compareTo(s[min])<0) {
+					min=j;
 				}
+				
 			}
-		}
-		System.out.println(c);
-		System.out.println("*********************************************");
+			String temp=s[i];
+			s[i]=s[min];
+			s[min]=temp;
 		
-		String s1="RAJU";
-		char[] ar = s1.toCharArray();
-		Arrays.sort(ar);
-		System.out.println(ar);
+		}
+		for(int i=0;i<s.length;i++)
+			System.out.print(s[i]+ " ");
+		
 	}
 
 }

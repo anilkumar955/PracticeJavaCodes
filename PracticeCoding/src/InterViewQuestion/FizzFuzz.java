@@ -1,25 +1,28 @@
 package InterViewQuestion;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
 public class FizzFuzz {
 	
-	
-	public static void fizfuzz(int n) {
-		for(int i=1;i<=15;i++) {
-			if(i%15==0) {
-				System.out.println("FizzBuzz");
-			}else if(i%3==0) {
-				System.out.println("Fizz");
-			}else if(i%5==0) {
-				System.out.println("Buzz");
-			}else {
-				System.out.println(i);
-			}
-		}
-	}
-
 	public static void main(String[] args) {
-		fizfuzz(15);
+		String s="Welcome";
+		int key=3;
+		for(int i=0;i<s.length()-key;i++) {
+			char c=s.charAt(i);
+		System.out.print(s.substring(c,i));
+			
+		}
 		
 	}
-
 }
+		

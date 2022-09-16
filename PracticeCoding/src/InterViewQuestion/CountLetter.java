@@ -3,14 +3,14 @@ package InterViewQuestion;
 public class CountLetter {
 
 	public static void main(String[] args) {
-		String s="anildddddd";
-		int count=0;
+		String s="anildd";
+		int cont=0;
+		
 		for(int i=0;i<s.length();i++) {
-			
-			count++;
-			
+			cont++;
 		}
-		System.out.println(count);
+		System.out.println(cont);
+		
 	}
-
 }
+		

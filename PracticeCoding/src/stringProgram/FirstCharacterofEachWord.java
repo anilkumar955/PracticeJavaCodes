@@ -13,7 +13,9 @@ public class FirstCharacterofEachWord {
 			}else {
 				System.out.print(w.charAt(0));
 				w="";
+			
 			}
+			
 			
 		}
 

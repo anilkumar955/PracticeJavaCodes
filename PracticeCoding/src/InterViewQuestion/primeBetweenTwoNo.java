@@ -5,24 +5,25 @@ import java.util.Scanner;
 public class primeBetweenTwoNo {
 
 	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
-		System.out.println("enter 1st no");
-		int fno = sc.nextInt();
-		System.out.println("enter 2nd no");
-		int sno = sc.nextInt();
 		
-		for(int no=fno;no<=sno;no++) {
-			int temp=0;
-			for(int i=2;i<no-1;i++) {
+		int no=2;
+		int no2=10;
+		while(no<no2) {
+			boolean flag=false;
+			for(int i=2;i<=no/2;i++) {
 				if(no%i==0) {
-					temp++;
+					flag=true;
+					break;
 				}
-			}if(temp==0) {
-				System.out.println(no);
 			}
+			if( !flag && no!=0 && no!=1) 
+				System.out.println(no+ " ");
+			no++;
+			
 		}
 		
 	}
+	
 }
 
 			

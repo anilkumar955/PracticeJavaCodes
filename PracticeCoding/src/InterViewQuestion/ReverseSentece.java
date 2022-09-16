@@ -9,8 +9,8 @@ public class ReverseSentece {
 		
 		String rev="";
 		String[] sp = s.split(" ");
-		for(int i=0;i<sp.length;i++) {
-			rev=sp[i]+" "+rev;
+		for(int i=sp.length-1;i>=0;i--) {
+			rev=rev+sp[i]+ " ";
 			
 		}
 		System.out.println(rev);

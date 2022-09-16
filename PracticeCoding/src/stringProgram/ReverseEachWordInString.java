@@ -10,17 +10,16 @@ public class ReverseEachWordInString {
 		
 		System.out.println("enter the string");
 		String text =sc.nextLine();
-	
-		String s="";
-		String[] sri =text.split(" ");
-		for(String str:sri) {
+		String a="";
+		String[] s=text.split(" ");
+		for(String sp:s) {
 			String rev=" ";
-			for(int i=str.length()-1;i>=0;i--) {
-				rev=rev+str.charAt(i);
+			for(int i=sp.length()-1;i>=0;i--) {
+				rev=rev+sp.charAt(i);
 			}
-			s=s+rev;
+			a=a+rev;
 		}
-		System.out.println(s);
+	System.out.println(a);
 		
 	}
 	

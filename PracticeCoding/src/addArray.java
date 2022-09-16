@@ -1,30 +1,21 @@
 
 public class addArray {
 	public static void main(String[] args) {
-		boolean flag=true;
-		int x=-121;
-	
-		int actno=x;
-		int res=0;
-		while(x!=0 && x<0) {
+		
+		int[] a= {3,4,6,2,1};
+		int[]b= {5,6,3,2,1,4};
+		int sum1=0;
+		int sum=0;
+		for(int i=0;i<a.length;i++) {
+			sum=sum+a[i];
 			
-			int digit=x%10;
-			res= res*10+digit;
-			x=x/10;
 		}
-		if(actno==res) {
-			System.out.println("pali");
+		for(int j=0;j<b.length;j++) {
+			sum1=sum1+b[j];
 		}
-		else {
-			System.out.println("not pali");
-		}
+		int mis=sum1-sum;
+		System.out.println(mis);
 		
-	}
-
-
-	 {
-		
-	
 	}
 }
 

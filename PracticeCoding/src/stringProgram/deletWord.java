@@ -9,6 +9,7 @@ public class deletWord {
 			char c=s.charAt(i);
 			if(c!=' ') {
 				w=w+c;
+				
 			}else {
 				if(!w.equals("dashsdf"))
 				a=a+w+" ";

@@ -5,19 +5,14 @@ public class AarrangeString {
 	public static void main(String[] args) {
 		
 		String s="anil d 955";
-		String a=" ",b=" ";
-		for(int i=0;i<s.length();i++) {
-			char c=s.charAt(i);
-			if(Character.isDigit(c)) {
-				a=a+c;
-			}else {
-				b=b+c;
-			}
-		}
 		
-		System.out.println(a.concat(b));
-		
-		
-	}
-		
+String a="";String b="";
+
+for(int i=0;i<s.length();i++) {
+	if(Character.isDigit(s.charAt(i))) {
+		a=a+s.charAt(i);
+	}else 
+		b=b+s.charAt(i);
+}
+System.out.println(a.concat(b));}
 }

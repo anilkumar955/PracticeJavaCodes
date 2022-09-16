@@ -1,32 +1,28 @@
 package Arraylist;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class addElement {
 	public static void main(String[] args) {
 		
-	//Iterating values using iterator	
-		ArrayList<Object> ar=new ArrayList();
-		ar.add("anil");
-		ar.add(234);
-		ar.add("d");
-		Iterator it=ar.iterator();
-		while(it.hasNext()) {
-			Object w=it.next();
-			System.out.println(w);
+		String s="ssrviceneeow";
+		char[] c=s.toCharArray();
+		Map<Character,Integer> map=new HashMap();
+		for(int i=0;i<c.length;i++){
+			if(!map.containsKey(c[i])){
+				map.put(c[i],1);
+			}else{
+				int value=map.get(c[i]);
+				map.put(c[i],value+1);
+			}
 			
+		
 		}
-	
-	
-	//add values in the list
-	ar.set(1, "kumar");
-	for(Object arr:ar) {
-		System.out.println("new added element" + arr);
-	
+		System.out.println(map);
 	}
 	
-	
-	}
 
 }
